@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+h1{
+    color: white;
+    text-align: center;
+    text-transform:uppercase;
+}
+
 body{
     display: flex;
     justify-content: center;
@@ -15,17 +21,24 @@ body{
 .container
 {
     background-color: rgba(84, 80, 75, 0.94);
-    width: 90vw;
+    width: 70vw;
     padding:30px;
     border-radius: 20px;
     margin: 10px 5px;
 }
 
+.input-box{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+}
 /* customise input box*/
 .input-box input
 {
-    width: 80%;
-    padding: 8px;
+    align-self: center;
+    width: 90%;
+    padding: 10px;
     outline: none;
     height: 20%;
     border: 2px solid #fff;
@@ -37,13 +50,15 @@ body{
 
 /*customise button*/
 #btnAdd {
-    width: 80%;
+    align-self: center;
+    width: 90%;
     height: 40px;
     padding: 10px;
     border: none;
     background-color: #fff;
     color: black;
     cursor: pointer;
+    border-radius: 15px;
 }
 
 span{
@@ -52,14 +67,45 @@ span{
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial sans-serif;
 }
 
-.address{
+.addButton{
     background-color: #161616;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    margin: 20px 5px;
-}.address:hover{
+    margin: 20px 0;
+    width: 100%;
+}
+
+#list-task{
+    align-self: center;
+    width: 90%;
+}
+
+.addButton:hover{
     background-color: #343333;
  }
+
+#btnDelete{
+    background-color: #cc94a3;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+
+}
+#del{
+    width: 90%;
+    align-self: center;
+}
+#del button{
+    width: 100%;
+    height: 40px;
+    margin: 15px 0;
+    background-color: #cc94a3;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
