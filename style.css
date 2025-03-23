@@ -15,7 +15,6 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-
 }
 
 .container
@@ -24,34 +23,32 @@ body{
     width: 70vw;
     padding:30px;
     border-radius: 20px;
-    margin: 10px 5px;
 }
 
 .input-box{
-    display: flex;
+    display: grid;
     flex-direction: column;
     align-items: stretch;
-    width: 100%;
+    width: 80%;
+    justify-self: center;
+    grid-gap: 15px;
 }
+
 /* customise input box*/
-.input-box input
+input
 {
     align-self: center;
-    width: 90%;
     padding: 10px;
     outline: none;
-    height: 20%;
     border: 2px solid #fff;
     color: #fff;
     border-radius: 15px;
     background-color: transparent;
-    margin: 15px 0;
 }
 
 /*customise button*/
 #btnAdd {
     align-self: center;
-    width: 90%;
     height: 40px;
     padding: 10px;
     border: none;
@@ -74,38 +71,31 @@ span{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    margin: 20px 0;
-    width: 100%;
 }
 
 #list-task{
+    display: grid;
     align-self: center;
-    width: 90%;
+    gap: 15px
 }
 
 .addButton:hover{
     background-color: #343333;
- }
+}
 
 #btnDelete{
-    background-color: #cc94a3;
+    background-color:  #cc94a3;
     border: none;
     padding: 10px;
     border-radius: 20px;
     color: white;
     cursor: pointer;
+}
 
-}
-#del{
-    width: 90%;
-    align-self: center;
-}
 #del button{
     width: 100%;
     height: 40px;
-    margin: 15px 0;
     background-color: #cc94a3;
     border: none;
     border-radius: 15px;
-    cursor: pointer;
 }
