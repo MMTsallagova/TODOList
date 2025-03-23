@@ -20,6 +20,8 @@ body{
 .container
 {
     background-color: rgba(84, 80, 75, 0.94);
+    display: flex;
+    justify-content: center;
     width: 70vw;
     padding:30px;
     border-radius: 20px;
